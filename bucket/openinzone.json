@@ -1,0 +1,31 @@
+{
+    "version": "1.1.2",
+    "description": "Control Sony INZONE headsets from the Windows tray, the command line and Stream Deck",
+    "homepage": "https://github.com/penguinwokrs/openinzone",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "Update with 'scoop update openinzone'. The update button inside the app installs the setup.exe version alongside this one.",
+        "The Stream Deck plugin is not part of this package: Settings > Plugin downloads it."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/penguinwokrs/openinzone/releases/download/v1.1.2/OpenInzone-1.1.2-win-x64.zip",
+            "hash": "d90584ebf3cb8d5c33a1107226c8d48a2fbc35ef8d1839a7fe01d13bf66fa1f5"
+        }
+    },
+    "bin": "inzone.exe",
+    "shortcuts": [
+        [
+            "inzonetray.exe",
+            "OpenInzone"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/penguinwokrs/openinzone/releases/download/v$version/OpenInzone-$version-win-x64.zip"
+            }
+        }
+    }
+}
