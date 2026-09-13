@@ -4,7 +4,8 @@
     "homepage": "https://github.com/penguinwokrs/openinzone",
     "license": "GPL-3.0-only",
     "notes": [
-        "Update with 'scoop update openinzone'. The update button inside the app installs the setup.exe version alongside this one.",
+        "Up to 1.1.2, the update button inside the app installs the setup.exe version alongside this one. Update those with 'scoop update openinzone' instead, with the tray closed.",
+        "Later versions: the update button updates through Scoop. 'scoop update openinzone' also works, with the tray closed.",
         "The Stream Deck plugin is not part of this package: Settings > Plugin downloads it."
     ],
     "architecture": {
